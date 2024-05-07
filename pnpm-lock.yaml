@@ -307,7 +307,7 @@ importers:
         specifier: ^0.1.2
         version: link:../analytics-util-queue
       '@analytics/session-utils':
-        specifier: ^0.1.19
+        specifier: ^0.2.0
         version: link:../analytics-util-session
       '@analytics/type-utils':
         specifier: ^0.3.1
@@ -342,7 +342,7 @@ importers:
         version: 7.15.3(@babel/core@7.15.8)
       aws-sdk-client-mock:
         specifier: ^0.5.5
-        version: 0.5.5(@aws-sdk/client-s3@3.511.0)(@aws-sdk/types@3.38.0)
+        version: 0.5.5(@aws-sdk/client-s3@3.511.0)(@aws-sdk/types@3.511.0)
       c8:
         specifier: ^7.10.0
         version: 7.10.0
@@ -2261,6 +2261,7 @@ packages:
   /@aws-sdk/types@3.38.0:
     resolution: {integrity: sha512-Opux3HLwMlWb7GIJxERsOnmbHrT2A1gsd8aF5zHapWPPH5Z0rYsgTIq64qgim896XlKlOw6/YzhD5CdyNjlQWg==}
     engines: {node: '>= 10.0.0'}
+    dev: false
 
   /@aws-sdk/types@3.511.0:
     resolution: {integrity: sha512-P03ufufxmkvd7nO46oOeEqYIMPJ8qMCKxAsfJk1JBVPQ1XctVntbail4/UFnrnzij8DTl4Mk/D62uGo7+RolXA==}
@@ -8964,14 +8965,14 @@ packages:
       - supports-color
     dev: true
 
-  /aws-sdk-client-mock@0.5.5(@aws-sdk/client-s3@3.511.0)(@aws-sdk/types@3.38.0):
+  /aws-sdk-client-mock@0.5.5(@aws-sdk/client-s3@3.511.0)(@aws-sdk/types@3.511.0):
     resolution: {integrity: sha512-djwyYj4vRAXGGH0nycd04/qxj4lK4UscK12dgRgYLigFzQ8EdM0+eZoFobbjXnXoPBG+YeN57UqrEbE1YW1qag==}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.0.0
       '@aws-sdk/types': ^3.0.0
     dependencies:
       '@aws-sdk/client-s3': 3.511.0
-      '@aws-sdk/types': 3.38.0
+      '@aws-sdk/types': 3.511.0
       '@types/sinon': 10.0.2
       sinon: 11.1.2
       tslib: 2.3.1
@@ -13158,6 +13159,7 @@ packages:
   /iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dependencies:
       safer-buffer: 2.1.2
     dev: true
