@@ -58,12 +58,11 @@ function googleTagManager(pluginConfig = {}) {
           w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
           var f = d.getElementsByTagName(s)[0],
             j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '',
-            p = preview ? '&gtm_preview=' + preview + '&gtm_auth=' + auth + '&gtm_cookies_win=x' : '';
+            dl = l != 'dataLayer' ? '&l=' + l : '';
           if (execution) {
             j[execution] = true;
           }
-          j.src = `${scriptSrc}?id=` + i + dl + p;
+          j.src = `${scriptSrc}?aw=` + i + dl;
           f.parentNode.insertBefore(j, f);
         })(window, document, 'script', dataLayerName, containerId);
         /* eslint-enable */
