@@ -1,6 +1,6 @@
 {
   "name": "@desti/google-tag-manager",
-  "version": "0.5.5",
+  "version": "0.6.5",
   "description": "Google tag manager plugin for 'analytics' module",
   "projectMeta": {
     "provider": {
